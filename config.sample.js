@@ -4,17 +4,17 @@ config = {
     testenv_xmn:' ',
     testenv_ads:' ',
 
-    rc_username : ' ',
+    rc_username:' ',
     rc_password:' ',
 
-    dropbox_username: ' ',
-    dropbox_password: ' ',
+    dropbox_username:' ',
+    dropbox_password:' ',
 
-    googledrive_username: ' ',
-    googledrive_password: ' ',
+    googledrive_username:' ',
+    googledrive_password:' ',
 
-    box_username: ' ',
-    box_password: ' ',
+    box_username:' ',
+    box_password:' ',
 
     sftp_host:' ',
     sftp_port:' ',
@@ -32,8 +32,8 @@ config = {
     dropbox_storage2:' ',
     dropbox_storage3:' ',
     dropbox_storage4:' ',
-    dropbox_password:' ',
-    dropbox_storage_password:' ',
+    dropbox_rc_password:' ',
+    dropbox_storage_key:' ',
 
 
     //box account and storage
@@ -45,8 +45,8 @@ config = {
     box_storage2:' ',
     box_storage3:' ',
     box_storage4:' ',
-    box_password:' ',
-    box_storage_password:' ',
+    box_rc_password:' ',
+    box_storage_key:' ',
 
 
     //googledrive account and storage
@@ -58,8 +58,9 @@ config = {
     google_storage2:' ',
     google_storage3:' ',
     google_storage4:' ',
-    google_password:' ',
-    google_storage_password:' ',
+    google_rc_password:' ',
+    google_storage_key:' ',
+
 
 
 }
