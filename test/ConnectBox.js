@@ -6,6 +6,7 @@ const puppeteer = require('puppeteer');
     const browser = await puppeteer.launch({headless:false});
     const page = await browser.newPage();
     await page.goto(config.testenv_itl);                                             //域名
+
     await page.waitForSelector('#textInput');
     await page.type('#textInput',config.rc_username);                                //RC账号
     await page.type('#password',config.rc_password);                                 //RC密码
