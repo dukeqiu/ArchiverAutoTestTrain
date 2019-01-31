@@ -23,7 +23,7 @@ const puppeteer = require('puppeteer');
     await newPage.type('input[type="password"]',config.dropbox_password);          //云盘密码
     await newPage.click('button[type="submit"]');
     await newPage.waitFor(5000);
-    await page.screenshot({path:'views/DropboxConnected02.png'});
+    await page.screenshot({path:'resultScreenShot/DropboxConnected02.png'});
 
 
 })();
