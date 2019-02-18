@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer');
 (async() => {
     const browser = await puppeteer.launch({headless:false});
     const page = await browser.newPage();
-    await page.goto(config.testenv_itl);                                             //域名
+    await page.goto(config.testenv_itl,{waitUntil: 'load', timeout: 0});                                             //域名
 
     await page.waitForSelector('#textInput');
     await page.type('#textInput',config.rc_username);                                //RC账号
@@ -26,7 +26,7 @@ const puppeteer = require('puppeteer');
     await newPage.click('span[class="inset_text submit"]');
 
     await newPage.waitFor(5000);
-    await page.screenshot({path:'resultScreenShot/BoxConnected.png'});
+    await page.screenshot({path:'views/BoxConnected.png'});
 
 
 
